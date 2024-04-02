@@ -17,7 +17,8 @@
 <p align="center"> An introduction to CSS Grid 
 
       
-#### [Click here for live site](https://wills-trillo-project.netlify.app/)
+#### [Click here for live site](https://wills-nexter-project.netlify.app//)
+
 
 </p>
 
