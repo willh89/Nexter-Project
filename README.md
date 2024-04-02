@@ -1,1 +1,120 @@
-# Nexter-Project
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="img/favicon.png" alt="Project logo"></a>
+</p>
+
+<h1 align="center">Nexter Project</h1>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+  
+---
+
+<p align="center"> An introduction to CSS Grid 
+
+      
+#### [Click here for live site](https://wills-trillo-project.netlify.app/)
+
+</p>
+
+
+![](img/Nexter.png)
+
+## Table of Contents
+
+- [About](#about)
+- [Usage](#usage)
+- [Requirements](#Requirements)
+- [Installation](#Installation)
+- [Built Using](#built_using)
+- [Authors](#authors)
+- [Acknowledgements](#acknowledgements)
+
+### About 
+
+The objective of this project was to construct a dynamic real estate website, utilising CSS-Grid within SASS/CSS to practice my skills with this particular methodology. Throughout the project, I gained insight into tried and tested techniques for positioning, spacing, and alignment.
+
+Numerous variables were incorporated, particularly colours, fonts, and size proportions. Additionally, a responsive design was integrated to ensure accessibility across all devices.
+
+### Requirements
+
+You will need to install [Node.js](https://nodejs.org/en/) to run this project.
+
+Check the documentation to install it on your system.
+
+### Installation
+
+Once Node.js is installed, you will need several extensions to run this project.
+
+Open the terminal/command-line in your code editor, then install the following:
+
+```
+npm install node-sass ---save-dev
+```
+
+```
+npm install postcss --save-dev
+```
+
+```
+npm install npm-run-all --save-dev
+```
+
+```
+npm install live-server --save-dev -w
+```
+
+Once the above are installed run the following commands:
+
+```
+npm run build:css
+```
+
+```
+npm run start
+```
+
+```
+npm watch:sass
+```
+Once installed, all following commands in the **package.json** file should function correctly.  
+```
+
+"scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+
+package.json
+
+```
+
+### Usage 
+
+Changes can be made in the components SASS folder.
+Run **npm watch:sass** to see in the browser all changes made in real time. 
+
+### Built Using 
+
+- HTML - Markup Language
+- CSS - Stylesheets
+- [SASS](https://sass-lang.com/) - CSS Preprocessor
+- [Node.js](https://sass-lang.com/) - CSS Preprocessor
+- CSS Grid - CSS web layout model
+
+### Authors
+
+- [@willh89](https://github.com/willh89) - Built by
+- [@jonasschmedtmann](https://github.com/jonasschmedtmann) - Idea & Initial Work
+
+### Acknowledgements
+[@jonasschmedtmann](https://github.com/jonasschmedtmann/advanced-css-course) - Advanced CSS Course
